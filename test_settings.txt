@@ -1,0 +1,8 @@
+Scenario.name = MyScenario
+Scenario.endTime = 600
+Scenario.updateInterval = 0.1
+Scenario.simulateConnections = false
+Scenario.nrofHostGroups = 0
+MovementModel.worldSize = 1000,1000
+Report.nrofReports = 0
+Events.nrof = 0
