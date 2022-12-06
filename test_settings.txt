@@ -17,3 +17,6 @@ myInterface.transmitRange = 0
 myInterface.transmitSpeed = 0
 Group1.movementModel = RandomWaypoint
 Group1.router = PassiveRouter
+
+SimClock.getTime()
+SimScenario.getInstance().getEndTime()
