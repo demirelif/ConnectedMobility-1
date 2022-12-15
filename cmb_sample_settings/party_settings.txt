@@ -12,17 +12,28 @@ myInterface.transmitRange = 0
 myInterface.transmitSpeed = 0
 
 # Groups
-Scenario.nrofHostGroups = 1
+Scenario.nrofHostGroups = 2
 
 Group1.groupID = x
 Group1.nrofHosts = 1
 Group1.nrofInterfaces = 1
 Group1.interface1 = myInterface
 Group1.movementModel = MapRouteMovement
-Group1.routeFile = data/FMIBuilding/buildings.wkt
+Group1.routeFile = data/FMIBuilding/Student.wkt
 Group1.routeType = 1
 Group1.router = PassiveRouter
 
+Group2.groupID = x
+Group2.nrofHosts = 1
+Group2.nrofInterfaces = 1
+Group2.interface1 = myInterface
+Group2.movementModel = MapRouteMovement
+Group2.routeFile = data/FMIBuilding/Wish.wkt
+Group2.routeType = 1
+Group2.router = PassiveRouter
+
 ## Map based movement -movement model specific settings
-MapBasedMovement.nrofMapFiles = 1
+MapBasedMovement.nrofMapFiles = 3
 MapBasedMovement.mapFile1 = data/FMIBuilding/buildings.wkt
+MapBasedMovement.mapFile2 = data/FMIBuilding/Student.wkt
+MapBasedMovement.mapFile3 = data/FMIBuilding/Wish.wkt
