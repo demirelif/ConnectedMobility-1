@@ -10,7 +10,6 @@ Events.nrof = 0
 myInterface.type = SimpleBroadcastInterface
 myInterface.transmitRange = 0
 myInterface.transmitSpeed = 0
-
 # Groups
 Scenario.nrofHostGroups = 4
 
@@ -20,8 +19,8 @@ Group1.nrofInterfaces = 1
 Group1.interface1 = myInterface
 Group1.movementModel = MapRouteMovement
 Group1.routeFile = data/FMIBuilding/Students.wkt
-Group1.routeType = 1
-Group1.router = PassiveRouter
+Group1.routeType = 2
+Group1.router = EpidemicRouter
 
 Group2.groupID = x2
 Group2.nrofHosts = 1
@@ -55,15 +54,23 @@ Group5.nrofHosts = 1
 Group5.nrofInterfaces = 1
 Group5.interface1 = myInterface
 Group5.movementModel = MapRouteMovement
-Group5.routeFile = data/FMIBuilding/Smokers.wkt
+#Group5.routeFile = data/FMIBuilding/Smokers.wkt
 Group5.routeType = 1
 Group5.router = PassiveRouter
 
+
 ## Map based movement -movement model specific settings
-MapBasedMovement.nrofMapFiles = 6
+MapBasedMovement.nrofMapFiles = 13
 MapBasedMovement.mapFile1 = data/FMIBuilding/buildings.wkt
 MapBasedMovement.mapFile2 = data/FMIBuilding/Students.wkt
 MapBasedMovement.mapFile3 = data/FMIBuilding/Wish.wkt
 MapBasedMovement.mapFile4 = data/FMIBuilding/Dancers.wkt
 MapBasedMovement.mapFile5 = data/FMIBuilding/Nerds.wkt
 MapBasedMovement.mapFile6 = data/FMIBuilding/Dancers.wkt
+MapBasedMovement.mapFile7 = data/FMIBuilding/Details.wkt
+MapBasedMovement.mapFile8 = data/FMIBuilding/FoodCourt.wkt
+MapBasedMovement.mapFile9 = data/FMIBuilding/DanceFloor.wkt
+MapBasedMovement.mapFile10 = data/FMIBuilding/FoodCourt.wkt
+MapBasedMovement.mapFile11 = data/FMIBuilding/LibraryDesk.wkt
+MapBasedMovement.mapFile12 = data/FMIBuilding/StudyTables.wkt
+MapBasedMovement.mapFile13 = data/FMIBuilding/Tree.wkt
