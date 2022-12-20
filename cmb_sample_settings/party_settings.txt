@@ -13,8 +13,8 @@ myInterface.transmitSpeed = 0
 # Groups
 Scenario.nrofHostGroups = 1
 
-Group1.groupID = x1
-Group1.nrofHosts = 1
+Group1.groupID = d
+Group1.nrofHosts = 20
 Group1.nrofInterfaces = 1
 Group1.interface1 = myInterface
 Group1.movementModel = MapRouteMovement
