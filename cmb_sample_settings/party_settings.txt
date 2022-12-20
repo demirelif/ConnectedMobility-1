@@ -33,3 +33,4 @@ MapBasedMovement.mapFile6 = data/FMIBuilding/Tree.wkt
 MapBasedMovement.mapFile7 = data/FMIBuilding/FoodCourt.wkt
 MapBasedMovement.mapFile8 = data/FMIBuilding/LibraryDesk.wkt
 MapBasedMovement.mapFile9 = data/FMIBuilding/StudyTables.wkt
+
