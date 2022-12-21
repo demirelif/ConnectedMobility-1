@@ -11,7 +11,7 @@ myInterface.type = SimpleBroadcastInterface
 myInterface.transmitRange = 0
 myInterface.transmitSpeed = 0
 # Groups
-Scenario.nrofHostGroups = 1
+Scenario.nrofHostGroups = 5
 
 Group1.groupID = d
 Group1.nrofHosts = 20
@@ -22,8 +22,44 @@ Group1.routeFile = data/FMIBuilding/Dancers.wkt
 Group1.routeType = 1
 Group1.router = EpidemicRouter
 
+Group2.groupID = w
+Group2.nrofHosts = 5
+Group2.nrofInterfaces = 1
+Group2.interface1 = myInterface
+Group2.movementModel = MapRouteMovement
+Group2.routeFile = data/FMIBuilding/Wish.wkt
+Group2.routeType = 1
+Group2.router = EpidemicRouter
+
+Group3.groupID = avSt
+Group3.nrofHosts = 20
+Group3.nrofInterfaces = 1
+Group3.interface1 = myInterface
+Group3.movementModel = MapRouteMovement
+Group3.routeFile = data/FMIBuilding/Students.wkt
+Group3.routeType = 1
+Group3.router = EpidemicRouter
+
+Group4.groupID = sm
+Group4.nrofHosts = 4
+Group4.nrofInterfaces = 1
+Group4.interface1 = myInterface
+Group4.movementModel = MapRouteMovement
+Group4.routeFile = data/FMIBuilding/Smokers.wkt
+Group4.routeType = 1
+Group4.router = EpidemicRouter
+
+Group5.groupID = n
+Group5.nrofHosts = 3
+Group5.nrofInterfaces = 1
+Group5.interface1 = myInterface
+Group5.movementModel = MapRouteMovement
+Group5.routeFile = data/FMIBuilding/Nerds.wkt
+Group5.routeType = 1
+Group5.router = EpidemicRouter
+
 ## Map based movement -movement model specific settings
-MapBasedMovement.nrofMapFiles = 9
+MapBasedMovement.nrofMapFiles = 13
 MapBasedMovement.mapFile1 = data/FMIBuilding/buildings.wkt
 MapBasedMovement.mapFile2 = data/FMIBuilding/Dancers.wkt
 MapBasedMovement.mapFile3 = data/FMIBuilding/Details.wkt
@@ -33,4 +69,8 @@ MapBasedMovement.mapFile6 = data/FMIBuilding/Tree.wkt
 MapBasedMovement.mapFile7 = data/FMIBuilding/FoodCourt.wkt
 MapBasedMovement.mapFile8 = data/FMIBuilding/LibraryDesk.wkt
 MapBasedMovement.mapFile9 = data/FMIBuilding/StudyTables.wkt
+MapBasedMovement.mapFile10 = data/FMIBuilding/Wish.wkt
+MapBasedMovement.mapFile11 = data/FMIBuilding/Students.wkt
+MapBasedMovement.mapFile12 = data/FMIBuilding/Smokers.wkt
+MapBasedMovement.mapFile13 = data/FMIBuilding/Nerds.wkt
 
