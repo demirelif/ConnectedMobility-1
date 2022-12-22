@@ -1,17 +1,26 @@
 # Settings for map route based movement in a triangle.
 
 Scenario.name = MapRouteMovement
-Scenario.endTime = 6000
+Scenario.endTime = 16000
 Scenario.updateInterval = 0.1
-Scenario.simulateConnections = false
+Scenario.simulateConnections = true
 Events.nrof = 0
 
 # Communication Interface
 myInterface.type = SimpleBroadcastInterface
-myInterface.transmitRange = 0
-myInterface.transmitSpeed = 0
+myInterface.transmitRange = 15
+myInterface.transmitSpeed = 4
 # Groups
 Scenario.nrofHostGroups = 5
+
+# how many reports to load
+Report.nrofReports = 1
+# length of the warmup period (simulated seconds)
+Report.warmup = 0
+# default directory of reports (can be overridden per Report with output setting)
+Report.reportDir = reports/
+# Report classes to load
+Report.report1 = MessageStatsReport
 
 Group1.groupID = d
 Group1.nrofHosts = 20
