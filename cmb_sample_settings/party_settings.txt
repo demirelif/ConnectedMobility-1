@@ -1,7 +1,7 @@
 # Settings for map route based movement in a triangle.
 
 Scenario.name = MapRouteMovement
-Scenario.endTime = 16000
+Scenario.endTime = 6000
 Scenario.updateInterval = 0.1
 Scenario.simulateConnections = true
 Events.nrof = 0
@@ -23,18 +23,18 @@ Report.reportDir = reports/
 Report.report1 = MessageStatsReport
 
 Group1.groupID = d
-Group1.nrofHosts = 20
+Group1.nrofHosts = 23
 Group1.nrofInterfaces = 1
 Group1.interface1 = myInterface
 Group1.waitTime = 50, 100
-Group1.speed = 1, 2.5
+Group1.speed = 1.5, 3.5
 Group1.movementModel = MapRouteMovement
 Group1.routeFile = data/FMIBuilding/Dancers.wkt
 Group1.routeType = 1
-Group1.router = SprayAndWaitRouter
+Group1.router = PassiveRouter
 
 Group2.groupID = w
-Group2.nrofHosts = 5
+Group2.nrofHosts = 7
 Group2.nrofInterfaces = 1
 Group2.interface1 = myInterface
 Group2.waitTime = 10, 30
@@ -42,11 +42,10 @@ Group2.speed = 1, 2
 Group2.movementModel = MapRouteMovement
 Group2.routeFile = data/FMIBuilding/Wish.wkt
 Group2.routeType = 1
-Group2.router = EpidemicRouter
-Group2.msgTtl = [60; 360; 720]
+Group2.router = DirectDeliveryRouter
 
 Group3.groupID = avSt
-Group3.nrofHosts = 20
+Group3.nrofHosts = 27
 Group3.nrofInterfaces = 1
 Group3.interface1 = myInterface
 Group3.waitTime = 20, 50
@@ -54,10 +53,10 @@ Group3.speed = 0, 1
 Group3.movementModel = MapRouteMovement
 Group3.routeFile = data/FMIBuilding/Students.wkt
 Group3.routeType = 1
-Group3.router = SprayAndWaitRouter
+Group3.router = PassiveRouter
 
 Group4.groupID = sm
-Group4.nrofHosts = 4
+Group4.nrofHosts = 5
 Group4.nrofInterfaces = 1
 Group4.interface1 = myInterface
 Group4.waitTime = 10, 30
@@ -66,7 +65,7 @@ Group4.waitTime = 0, 120
 Group4.movementModel = MapRouteMovement
 Group4.routeFile = data/FMIBuilding/Smokers.wkt
 Group4.routeType = 1
-Group4.router = SprayAndWaitRouter
+Group4.router = PassiveRouter
 
 Group5.groupID = n
 Group5.nrofHosts = 4
@@ -78,7 +77,7 @@ Group5.waitTime = 0, 120
 Group5.movementModel = MapRouteMovement
 Group5.routeFile = data/FMIBuilding/Nerds.wkt
 Group5.routeType = 1
-Group5.router = SprayAndWaitRouter
+Group5.router = PassiveRouter
 
 ## Map based movement -movement model specific settings
 MapBasedMovement.nrofMapFiles = 13
