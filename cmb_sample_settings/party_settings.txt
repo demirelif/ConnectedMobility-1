@@ -16,7 +16,7 @@ Scenario.nrofHostGroups = 5
 # how many reports to load
 Report.nrofReports = 1
 # length of the warmup period (simulated seconds)
-Report.warmup = 0
+Report.warmup = 100
 # default directory of reports (can be overridden per Report with output setting)
 Report.reportDir = reports/
 # Report classes to load
@@ -27,11 +27,11 @@ Group1.nrofHosts = 20
 Group1.nrofInterfaces = 1
 Group1.interface1 = myInterface
 Group1.waitTime = 50, 100
-Group1.speed = 1, 2
+Group1.speed = 1, 2.5
 Group1.movementModel = MapRouteMovement
 Group1.routeFile = data/FMIBuilding/Dancers.wkt
 Group1.routeType = 1
-Group1.router = EpidemicRouter
+Group1.router = SprayAndWaitRouter
 
 Group2.groupID = w
 Group2.nrofHosts = 5
@@ -43,6 +43,7 @@ Group2.movementModel = MapRouteMovement
 Group2.routeFile = data/FMIBuilding/Wish.wkt
 Group2.routeType = 1
 Group2.router = EpidemicRouter
+Group2.msgTtl = [60; 360; 720]
 
 Group3.groupID = avSt
 Group3.nrofHosts = 20
@@ -53,7 +54,7 @@ Group3.speed = 0, 1
 Group3.movementModel = MapRouteMovement
 Group3.routeFile = data/FMIBuilding/Students.wkt
 Group3.routeType = 1
-Group3.router = EpidemicRouter
+Group3.router = SprayAndWaitRouter
 
 Group4.groupID = sm
 Group4.nrofHosts = 4
@@ -65,10 +66,10 @@ Group4.waitTime = 0, 120
 Group4.movementModel = MapRouteMovement
 Group4.routeFile = data/FMIBuilding/Smokers.wkt
 Group4.routeType = 1
-Group4.router = EpidemicRouter
+Group4.router = SprayAndWaitRouter
 
 Group5.groupID = n
-Group5.nrofHosts = 3
+Group5.nrofHosts = 4
 Group5.nrofInterfaces = 1
 Group5.interface1 = myInterface
 Group5.waitTime = 10, 30
@@ -77,7 +78,7 @@ Group5.waitTime = 0, 120
 Group5.movementModel = MapRouteMovement
 Group5.routeFile = data/FMIBuilding/Nerds.wkt
 Group5.routeType = 1
-Group5.router = EpidemicRouter
+Group5.router = SprayAndWaitRouter
 
 ## Map based movement -movement model specific settings
 MapBasedMovement.nrofMapFiles = 13
